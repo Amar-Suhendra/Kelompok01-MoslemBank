@@ -1,28 +1,28 @@
-CREATE DATABASE MoslemBank;
+CREATE DATABASE IF NOT EXISTS MoslemBank;
 
-CREATE TABLE MoslemBank.Masjid (
+CREATE TABLE IF NOT EXISTS MoslemBank.Masjid (
     MasjidID VARCHAR(10) PRIMARY KEY,
     MasjidName VARCHAR(100) NOT NULL,
     MasjidAddress VARCHAR(255) NOT NULL,
     MasjidPassword VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE MoslemBank.Donation (
-    DonationID VARCHAR(10) PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE IF NOT EXISTS MoslemBank.Donation (
+    DonationID VARCHAR(10) PRIMARY KEY,
     Amount INTEGER NOT NULL,
     Date DATE NOT NULL,
     MasjidID VARCHAR(10),
 
-    FOREIGN KEY (MasjidID) REFERENCES MoslemBank.Expenses(MasjidID)
+    FOREIGN KEY (MasjidID) REFERENCES MoslemBank.Masjid(MasjidID)
 );
 
-CREATE TABLE MoslemBank.Expenses (
-    ExpenseID VARCHAR(10) PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE IF NOT EXISTS MoslemBank.Expenses (
+    ExpenseID VARCHAR(10) PRIMARY KEY,
     Amount INTEGER NOT NULL,
     Date DATE NOT NULL,
     MasjidID VARCHAR(10),
 
-    FOREIGN KEY (MasjidID) REFERENCES MoslemBank.Donation(MasjidID)
+    FOREIGN KEY (MasjidID) REFERENCES MoslemBank.Masjid(MasjidID)
 );
 
 -- Insert 10 random data for MoslemBank.Masjid
