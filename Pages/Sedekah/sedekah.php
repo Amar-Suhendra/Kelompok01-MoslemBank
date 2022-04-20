@@ -18,33 +18,35 @@
         >
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
+              <th>No</th>
+              <th>Donation ID</th>
+              <th>Amount</th>
+              <th>Date</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
+              <th>No</th>
+              <th>Donation ID</th>
+              <th>Amount</th>
+              <th>Date</th>
             </tr>
           </tfoot>
           <tbody>
+            <?php
+            $no = 1;
+            $id = $_SESSION['MasjidID'];
+            $sql = $db->query("select * from donation where MasjidID = '$id';");
+
+            while ($data = $sql->fetch_assoc()) {
+            ?>
             <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011/04/25</td>
-              <td>$320,800</td>
+              <th><?php echo $no++ ?></th>
+              <th><?php echo $data['DonationID'] ?></th>
+              <th><?php echo "Rp.".$data['Amount'] ?></th>
+              <th><?php echo $data['Date'] ?></th>
             </tr>
+            <?php } ?>
           </tbody>
         </table>
       </div>
