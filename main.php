@@ -188,8 +188,6 @@ $user = $_SESSION['MasjidName'];
                 } elseif ($aksi == 'hapus') {
                     include 'Pages/Pengeluaran/pengeluaran_hapus.php';
                 }
-            } elseif ($page == 'home') {
-                include 'Pages/Home/home.php';
             } elseif ($page == 'dashboard') {
                 include 'Pages/dashboard.php';
             }
