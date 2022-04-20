@@ -1,0 +1,11 @@
+.bg-login-img{
+    background: url("../../Img/masjid.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .bg-register-img {
+    background: url("../../Img/masjid1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
