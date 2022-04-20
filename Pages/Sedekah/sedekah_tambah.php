@@ -4,19 +4,24 @@ if (isset($_POST['submit'])) {
     $amount = $_POST['amount'];
     $date = $_POST['date'];
     $masjidID = $_SESSION['MasjidID'];
-    $result = mysqli_query($db, 'select count(*) from donation;');
+    $result = mysqli_query($db, 'select DonationID from donation order by DonationID desc limit 1;');
     $row = mysqli_fetch_array($result);
 
-    $jumlahdigit = strlen($row[0]);
+    $lastdigit = str_split($row[0],3);
+    $lastdigit = $lastdigit[1] + 1;
+
+    $jumlahdigit = strlen($lastdigit);
 
     if ($jumlahdigit == 1) {
-        $donationID = 'DON00' . $row[0] + 1;
+        $donationID = 'DON00' . $lastdigit;
     } elseif ($jumlahdigit == 2) {
-        $donationID = 'DON0' . $row[0] + 1;
-    } elseif ($jumlahdigit == 3) {
-        $donationID = 'DON' . $row[0] + 1;
-    } else {
-        $donationID = '' . $row[0] + 1;
+        $donationID = 'DON0' . $lastdigit;
+    } elseif ($jumlahdigit >= 3) {
+        $donationID = 'DON' . $lastdigit;
+    }
+
+    if ($date == null) {
+        $date = date("Y/m/d");
     }
 
     $sql = "INSERT INTO donation (donationID, amount, date, MasjidID) VALUES ('$donationID', '$amount', '$date', '$masjidID')";
@@ -26,5 +31,6 @@ if (isset($_POST['submit'])) {
     } else {
         echo 'Error: ' . $sql . '<br>' . mysqli_error($db);
     }
+    $data = "";
 }
 ?>
