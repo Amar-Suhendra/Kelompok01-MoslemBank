@@ -86,7 +86,7 @@
                   <a style="text-decoration: none; color: white" name="edit" href="?page=pengeluaran&aksi=edit&id=<?php echo $data['ExpenseID']; ?>">Edit</a>
                 </button>
                 <button type="button" class="btn btn-danger">
-                  <a style="text-decoration: none; color: white" href="?page=pengeluaran&aksi=hapus&id=<?php echo $data['ExpenseID']; ?>">Hapus</a>
+                  <a style="text-decoration: none; color: white" href="?page=pengeluaran&aksi=hapus&id=<?php echo $data['ExpenseID']; ?>" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
                 </button>
               </td>
             </tr>
