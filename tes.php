@@ -109,24 +109,10 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">LOGIN</span>
-                <img class="img-profile rounded-circle" src="Assets/Img/user.png" />
+              <a href="login.php">
+              <button type="button" class="btn btn-success">Login to MoslemBank</button>
               </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  LOGIN
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  EXIT
-                </a>
-              </div>
-            </li>
-          </ul>
+           
         </nav>
         <!-- End of Topbar -->
 
@@ -142,46 +128,50 @@
           <!-- /.container-fluid -->
           <div class="row">
             <div class="col-12 py-5">
-              <!-- First row -->
-              <div class="row">
-                <div class="column">
-                <div class="card" style="width: 30rem;">
-                <img src="Assets/img/index1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">guru yang dihadirkan dalam perjalanan yang telah dilewati</h5>
-                  <p> "Tidak pernah ada kehadiran seseorang yang sia-sia dalam hidup kita. Baik itu yang sudah berbuat baik kepada anda atau yang sudah jahat kepada anda, semua itu adalah guru yang mengajarkan untuk menjadi pribadi yang lebih baik. </p>
-                  <blockquote class="blockquote text-right">
-                    <footer class="blockquote-footer">Ali Bin Abi Thalib</footer>
-                  </blockquote>
-                </div>
-              </div>
-                </div>
-                <div class="column">
-                <div class="card" style="width: 30rem;">
-                <img src="Assets/img/index2.png" class="card-img-top" alt="...">
-                <h5 class="card-title">Laki-laki itu akan kelihatan lebih dewasa, ketika dia tidak lagi menyakiti wanita</h5>
-                  <p> “Salah satu tanda seorang laki-laki yang sifatnya sudah dewasa (bukan dewasa karena usia), adalah dia sangat bisa menghargai seorang wanita dan tidak akan sanggup untuk menyakitinya” </p>
-                  <blockquote class="blockquote text-right">
-                    <footer class="blockquote-footer">M. Nur Rudiyanto</footer>
-                  </blockquote>
-              </div>
-                </div>
-                <div class="column">
-                <div class="card" style="width: 30rem;">
-                <img src="Assets/img/index3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Jadilah orang baik, meskipun kau tak diperlakukan baik oleh orang lain</h5>
-                  <p> “Bila engkau hendak memuji seseorang, pujilah Allah.
-                Karena tiada seorang manusia pun lebih banyak dalam memberi kepadamu dan lebih santun
-                lembut kepadamu selain Allah.” </p>
-                  <blockquote class="blockquote text-right">
-                    <footer class="blockquote-footer">Khairul Umam Albi</footer>
-                  </blockquote>
-                </div>
-              </div>
-              <!-- End of First Row -->
+            <img src="Assets/img/index1.png" class="rounded float-left" width="150px"> 
+                <h2>guru yang dihadirkan dalam perjalanan yang telah dilewati</h2><br>
+                <p> "Tidak pernah ada kehadiran seseorang yang sia-sia dalam hidup kita. Baik itu yang sudah berbuat baik kepada anda atau yang sudah jahat kepada anda, semua itu adalah guru yang mengajarkan untuk menjadi pribadi yang lebih baik. </p>
+                    <blockquote class="blockquote text-right">
+                    <footer  class="blockquote-footer">Ali Bin Abi Thalib</footer>
+                    </blockquote>
+            <hr>
+            <img src="Assets/img/index2.png" class="rounded float-left" width="150px"> 
+                <h2>Laki-laki itu akan kelihatan lebih dewasa, ketika dia tidak lagi menyakiti wanita</h2><br>
+                <p> “Salah satu tanda seorang laki-laki yang sifatnya sudah dewasa (bukan dewasa karena usia), adalah dia sangat bisa menghargai seorang wanita dan tidak akan sanggup untuk menyakitinya”</p>
+                    <blockquote class="blockquote text-right">
+                    <footer  class="blockquote-footer">M. Nur Rudiyanto</footer>
+                    </blockquote>
+                    <hr>
+            <img src="Assets/img/index3.png" class="rounded float-left" width="150px"> 
+                <h2>Jadilah orang baik, meskipun kau tak diperlakukan baik oleh orang lain</h2><br>
+                <p> “Bila engkau hendak memuji seseorang, pujilah Allah. 
+                    Karena tiada seorang manusia pun lebih banyak dalam memberi kepadamu dan lebih santun 
+                    lembut kepadamu selain Allah.”</p>
+                    <blockquote class="blockquote text-right">
+                    <footer  class="blockquote-footer">Khairul Umam Albi</footer>
+                    </blockquote>
+            <hr>
+            <hr>
+            <img src="Assets/img/index4.png" class="rounded float-left" width="150px"> 
+                <h2>Orang yang sering merasa iri dan dengki cuma perlu belajar satu hal, yaitu ikhlas</h2><br>
+                <p> “Bila engkau hendak memuji seseorang, pujilah Allah. 
+                    Karena tiada seorang manusia pun lebih banyak dalam memberi kepadamu dan lebih santun 
+                    lembut kepadamu selain Allah.”</p>
+                    <blockquote class="blockquote text-right">
+                    <footer  class="blockquote-footer">Khairul Umam Albi</footer>
+                    </blockquote>
+            <hr>
 
-              <hr>
+            <hr>
+            <img src="Assets/img/index5.png" class="rounded float-left" width="150px"> 
+                <h2>Apapun yang terjadi hari ini syukuri, ikhlaskan. Jadikan setiap hal yang terjadi sebagai pelajaran</h2><br>
+                <p> "Banyak hal yang harus Anda lalui di dalam hidup ini. Entah itu peristiwa, patah hati, menyedihkan, memalukan, kekalahan sampai pada hal yang menyenangkan. Semua harus Anda syukuri, sebagai bagian dari tempaan hidup yang akan membuat nda jadi lebih bijaksana." </p>
+                    <blockquote class="blockquote text-right">
+                    <footer  class="blockquote-footer">Khairul Umam Albi</footer>
+                    </blockquote>
+            <hr>
+
+              
               <!-- Second row -->
 
            
