@@ -60,7 +60,11 @@ $total_this_month = $total_donation_this_month - $total_expenses_this_month;
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Pengeluaran</div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rp.
-                  <?php echo number_format($total_expenses, 0, ',', '.'); ?>
+                  <?php if ($total_expenses == null) {
+                      echo '0';
+                  } else {
+                      echo number_format($total_expenses, 0, ',', '.');
+                  } ?>
                 </div>
               </div>
               <div class="col-auto">
@@ -135,11 +139,11 @@ $total_this_month = $total_donation_this_month - $total_expenses_this_month;
 
                 while ($data = $sql->fetch_assoc()) { ?>
                   <tr>
-                    <th><?php echo $no++; ?></th>
-                    <th><?php echo $data['DonationID']; ?></th>
-                    <th><?php echo $data['Date']; ?></th>
-                    <th><?php echo 'Rp.' .
-                        number_format($data['Amount'], 0, ',', '.'); ?></th>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $data['DonationID']; ?></td>
+                    <td><?php echo $data['Date']; ?></td>
+                    <td><?php echo 'Rp.' .
+                        number_format($data['Amount'], 0, ',', '.'); ?></td>
                   </tr>
                 <?php }
                 ?>
@@ -191,14 +195,19 @@ $total_this_month = $total_donation_this_month - $total_expenses_this_month;
                 <?php }
                 ?>
                 <tr>
-                  <td colspan="3">Total</td>
-                  <td><?php echo 'Rp.' .
-                      number_format(
-                          $total_expenses_this_month,
-                          0,
-                          ',',
-                          '.'
-                      ); ?></td>
+                  <th colspan="3">Total</th>
+                  <th><?php if ($total_expenses_this_month == null) {
+                      echo 'Rp. 0';
+                  } else {
+                      echo 'Rp.' .
+                          number_format(
+                              $total_expenses_this_month,
+                              0,
+                              ',',
+                              '.'
+                          );
+                  } ?></th>
+                   </td>
                 </tr>
               </tbody>
             </table>
