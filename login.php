@@ -84,7 +84,7 @@ if (isset($_POST['login'])) {
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                         </div>
-                                         <button type="submit" class="btn btn-success btn-user btn-block" name="login">
+                                        <button type="submit" class="btn btn-success btn-user btn-block" name="login">
                                             Login
                                         </button> 
                                         <hr>
