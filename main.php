@@ -1,4 +1,12 @@
-<?php include "config.php" ?>
+<?php
+session_start();
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+include 'config.php';
+if ($_SESSION['login'] != true) {
+    header('Location:index.php');
+}
+$user = $_SESSION['MasjidName'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -120,7 +128,7 @@
                   aria-expanded="false"
                 >
                   <span class="mr-2 d-none d-lg-inline text-gray-600 small"
-                    >USERNAME</span
+                    ><?php echo $user; ?></span
                   >
                   <img
                     class="img-profile rounded-circle"
@@ -180,8 +188,8 @@
                 } elseif ($aksi == 'hapus') {
                     include 'Pages/Pengeluaran/pengeluaran_hapus.php';
                 }
-            }else {
-              
+            } elseif ($page == 'home') {
+                include 'Pages/Home/home.php';
             }
             ?>
           </div>
