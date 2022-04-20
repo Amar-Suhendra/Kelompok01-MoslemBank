@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
             $_SESSION['MasjidName'] = $row['MasjidName'];
             $_SESSION['MasjidAddress'] = $row['MasjidAddress'];
             $_SESSION['MasjidPassword'] = $row['MasjidPassword'];
-            header("location: main.php?Pages=home");
+            header("location: main.php?page=dashboard");
             exit();
         }
     } else {
