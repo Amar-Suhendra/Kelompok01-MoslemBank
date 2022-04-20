@@ -17,6 +17,8 @@ if (isset($_POST['regis'])) {
         $masjidID = 'MAS0' . $row[0] + 1;
     } elseif ($jumlahdigit == 3) {
         $masjidID = 'MAS' . $row[0] + 1;
+    }else{
+        $masjidID = 'MAS' . $row[0] + 1;
     }
 
     if ($MasjidPassword == $MasjidRepeatPassword) {

@@ -182,23 +182,23 @@ $total_this_month = $total_donation_this_month - $total_expenses_this_month;
 
                 while ($data = $sql->fetch_assoc()) { ?>
                   <tr>
-                    <th><?php echo $no++; ?></th>
-                    <th><?php echo $data['ExpenseID']; ?></th>
-                    <th><?php echo $data['Date']; ?></th>
-                    <th><?php echo 'Rp.' .
-                        number_format($data['Amount'], 0, ',', '.'); ?></th>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $data['ExpenseID']; ?></td>
+                    <td><?php echo $data['Date']; ?></td>
+                    <td><?php echo 'Rp.' .
+                        number_format($data['Amount'], 0, ',', '.'); ?></td>
                   </tr>
                 <?php }
                 ?>
                 <tr>
-                  <th colspan="3">Total</th>
-                  <th><?php echo 'Rp.' .
+                  <td colspan="3">Total</td>
+                  <td><?php echo 'Rp.' .
                       number_format(
                           $total_expenses_this_month,
                           0,
                           ',',
                           '.'
-                      ); ?></th>
+                      ); ?></td>
                 </tr>
               </tbody>
             </table>
