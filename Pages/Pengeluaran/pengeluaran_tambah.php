@@ -4,27 +4,33 @@ if (isset($_POST['submit'])) {
     $amount = $_POST['amount'];
     $date = $_POST['date'];
     $masjidID = $_SESSION['MasjidID'];
-    $result = mysqli_query($db, 'select count(*) from expenses;');
+    $result = mysqli_query($db, 'select ExpenseID from expenses order by ExpenseID desc limit 1;');
     $row = mysqli_fetch_array($result);
 
-    $jumlahdigit = strlen($row[0]);
+    $lastdigit = str_split($row[0],3);
+    $lastdigit = $lastdigit[1] + 1;
+
+    $jumlahdigit = strlen($lastdigit);
 
     if ($jumlahdigit == 1) {
-        $expenseID = 'EXP00' . $row[0] + 1;
+        $expensesID = 'EXP00' . $lastdigit;
     } elseif ($jumlahdigit == 2) {
-        $expenseID = 'EXP0' . $row[0] + 1;
-    } elseif ($jumlahdigit == 3) {
-        $expenseID = 'EXP' . $row[0] + 1;
-    } else {
-        $expenseID = 'EXP' . $row[0] + 1;
+        $expensesID = 'EXP0' . $lastdigit;
+    } elseif ($jumlahdigit >= 3) {
+        $expensesID = 'EXP' . $lastdigit;
     }
 
-    $sql = "INSERT INTO expenses (expenseID, amount, date, MasjidID) VALUES ('$expenseID', '$amount', '$date', '$masjidID')";
+    if ($date == null) {
+        $date = date("Y/m/d");
+    }
+
+    $sql = "INSERT INTO expenses (expenseID, amount, date, MasjidID) VALUES ('$expensesID', '$amount', '$date', '$masjidID')";
     if (mysqli_query($db, $sql)) {
         echo "<script>alert('Submit Success');</script>";
         echo "<script>location='?page=pengeluaran';</script>";
     } else {
         echo 'Error: ' . $sql . '<br>' . mysqli_error($db);
     }
+    $data = "";
 }
 ?>
