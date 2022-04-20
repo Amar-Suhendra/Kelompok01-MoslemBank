@@ -1,18 +1,20 @@
 <?php
 include 'config.php';
-if(isset($_POST['login'])){
+if (isset($_POST['login'])) {
     $USERNAME = $_POST['username'];
     $PASSWORD = $_POST['password'];
 
-    $result = mysqli_query($db, "SELECT * FROM masjid WHERE MasjidName = '$USERNAME' AND MasjidPassword = '$PASSWORD'");
+    $result = mysqli_query(
+        $db,
+        "SELECT * FROM masjid WHERE MasjidName = '$USERNAME' AND MasjidPassword = '$PASSWORD'"
+    );
 
     //check username
-    if(mysqli_num_rows($result) == 1){
-            // set session
-            $_SESSION['login'] = true;
-            header('location: main.php');     
-        
-    }else{
+    if (mysqli_num_rows($result) == 1) {
+        // set session
+        $_SESSION['login'] = true;
+        header('location: main.php');
+    } else {
         echo '<script>
         alert("Username or Password is incorrect")
         </script>';
@@ -30,7 +32,7 @@ if(isset($_POST['login'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MoslemBank - Login</title>
+    <title>MoslemBank | Login</title>
     <link rel="stylesheet" href="Assets/costum/CSS/style.css">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,8 +46,8 @@ if(isset($_POST['login'])){
 </head>
 
 <body class="bg-gradient-success">
-    <hr>
-    <hr>
+    <br>
+    <br>
     <div class="container">
         <!-- Outer Row -->
         <div class="row justify-content-center">
@@ -78,7 +80,7 @@ if(isset($_POST['login'])){
                                         </button> 
                                         <hr>
                                     </form>
-                                    <hr>
+                                    <br>
                                     <div class="text-center">
                                         <a class="small" href="register.php">Create an Account!</a>
                                     </div>
