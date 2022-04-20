@@ -249,7 +249,7 @@ $user = $_SESSION['MasjidName'];
               Cancel
             </button>
             <form method="POST" action="logout.php">
-              <button type="submit" class="btn btn-success" name="logout">Logout</button>=
+              <button type="submit" class="btn btn-success" name="logout">Logout</button>
             </form>
           </div>
         </div>
