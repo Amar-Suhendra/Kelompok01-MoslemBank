@@ -58,7 +58,7 @@ $user = $_SESSION['MasjidName'];
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="?page=dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a
           >
@@ -190,6 +190,8 @@ $user = $_SESSION['MasjidName'];
                 }
             } elseif ($page == 'home') {
                 include 'Pages/Home/home.php';
+            } elseif ($page == 'dashboard') {
+                include 'Pages/dashboard.php';
             }
             ?>
           </div>
