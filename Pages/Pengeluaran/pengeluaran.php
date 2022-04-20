@@ -8,7 +8,7 @@
       <div class="card shadow mb-4">
         <div class="card-header">Tambah</div>
         <div class="card-body">
-          <form action="" method="post">
+          <form action="?page=pengeluaran&aksi=tambah" method="post">
             <table>
               <thead>
                 <th>Amount</th>
@@ -17,7 +17,7 @@
               <tbody>
                 <tr>
                   <td>
-                    <input type="text" name="amount" placeholder="Rp..." class="form-control" />
+                    <input type="number" name="amount" placeholder="Rp..." class="form-control" />
                   </td>
                   <td>
                     <input type="date" name="date" class="form-control" />
@@ -78,18 +78,15 @@
             <tr>
               <td><?php echo $no++; ?></td>
               <td><?php echo $data['ExpenseID']; ?></td>
-              <td><?php echo 'Rp.' . $data['Amount']; ?></td>
+              <td><?php echo 'Rp.' .
+                  number_format($data['Amount'], 0, ',', '.'); ?></td>
               <td><?php echo $data['Date']; ?></td>
               <td class="col-2">
                 <button type="button" class="btn btn-primary">
-                  <a style="text-decoration: none; color: white" href="#"
-                    >Edit</a
-                  >
+                  <a style="text-decoration: none; color: white" name="edit" href="?page=pengeluaran&aksi=edit&id=<?php echo $data['ExpenseID']; ?>">Edit</a>
                 </button>
                 <button type="button" class="btn btn-danger">
-                  <a style="text-decoration: none; color: white" href="#"
-                    >Hapus</a
-                  >
+                  <a style="text-decoration: none; color: white" href="?page=pengeluaran&aksi=hapus&id=<?php echo $data['ExpenseID']; ?>" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
                 </button>
               </td>
             </tr>
