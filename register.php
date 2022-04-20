@@ -41,30 +41,20 @@
                 <div class="text-center">
                   <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                 </div>
-                <form class="user">
-                  <div class="form-group row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
+                <form class="user" action="pro_regis.php" method="POST">
+                  <div class="form-group">
                       <input
                         type="text"
                         class="form-control form-control-user"
-                        id="MasjidID"
-                        placeholder="Masjid ID"
-                      />
-                    </div>
-                    <div class="col-sm-6">
-                      <input
-                        type="text"
-                        class="form-control form-control-user"
-                        id="MasjidName"
+                        name="MasjidName"
                         placeholder="Masjid Name"
                       />
-                    </div>
                   </div>
                   <div class="form-group">
                     <input
                       type="text"
                       class="form-control form-control-user"
-                      id="MasjidAddress"
+                      name="MasjidAddress"
                       placeholder="Masjid Address"
                     />
                   </div>
@@ -73,7 +63,7 @@
                       <input
                         type="password"
                         class="form-control form-control-user"
-                        id="MasjidPassword"
+                        name="MasjidPassword"
                         placeholder="Password"
                       />
                     </div>
@@ -81,14 +71,12 @@
                       <input
                         type="password"
                         class="form-control form-control-user"
-                        id="MasjidRepeatPassword"
+                        name="MasjidRepeatPassword"
                         placeholder="Repeat Password"
                       />
                     </div>
                   </div>
-                  <a href="#" class="btn btn-success btn-user btn-block">
-                    Register Account
-                  </a>
+                  <button type="submit" class="btn btn-success btn-user btn-block" name="regis">Register Account</button>
                   <br>
                 </form>
                 <hr />
