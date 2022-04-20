@@ -1,6 +1,7 @@
 <?php
-include 'config.php';
+session_start();
 if (isset($_POST['login'])) {
+    include 'config.php';
     $USERNAME = $_POST['username'];
     $PASSWORD = $_POST['password'];
 
@@ -12,12 +13,20 @@ if (isset($_POST['login'])) {
     //check username
     if (mysqli_num_rows($result) == 1) {
         // set session
-        $_SESSION['login'] = true;
-        header('location: main.php');
+        if ($row = mysqli_fetch_assoc($result)) {
+            $_SESSION['login'] = true;
+            $_SESSION['MasjidID'] = $row['MasjidID'];
+            $_SESSION['MasjidName'] = $row['MasjidName'];
+            $_SESSION['MasjidAddress'] = $row['MasjidAddress'];
+            $_SESSION['MasjidPassword'] = $row['MasjidPassword'];
+            header("location: main.php?Pages=home");
+            exit();
+        }
     } else {
         echo '<script>
         alert("Username or Password is incorrect")
         </script>';
+        exit();
     }
 }
 ?>
