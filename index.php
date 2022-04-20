@@ -129,22 +129,22 @@
           <div class="row">
             <div class="col-12 py-5">
             <img src="Assets/img/index1.png" class="rounded float-left" width="150px"> 
-                <h2>guru yang dihadirkan dalam perjalanan yang telah dilewati</h2><br>
-                <p> "Tidak pernah ada kehadiran seseorang yang sia-sia dalam hidup kita. Baik itu yang sudah berbuat baik kepada anda atau yang sudah jahat kepada anda, semua itu adalah guru yang mengajarkan untuk menjadi pribadi yang lebih baik. </p>
+                <h2 class="text-center">Guru yang dihadirkan dalam perjalanan yang telah dilewati</h2><br>
+                <p class="text-center"> "Tidak pernah ada kehadiran seseorang yang sia-sia dalam hidup kita. Baik itu yang sudah berbuat baik kepada anda atau yang sudah jahat kepada anda, semua itu adalah guru yang mengajarkan untuk menjadi pribadi yang lebih baik. </p>
                     <blockquote class="blockquote text-right">
                     <footer  class="blockquote-footer">Ali Bin Abi Thalib</footer>
                     </blockquote>
             <hr>
             <img src="Assets/img/index2.png" class="rounded float-left" width="150px"> 
-                <h2>Laki-laki itu akan kelihatan lebih dewasa, ketika dia tidak lagi menyakiti wanita</h2><br>
-                <p> “Salah satu tanda seorang laki-laki yang sifatnya sudah dewasa (bukan dewasa karena usia), adalah dia sangat bisa menghargai seorang wanita dan tidak akan sanggup untuk menyakitinya”</p>
+                <h2 class="text-center">Laki-laki itu akan kelihatan lebih dewasa, ketika dia tidak lagi menyakiti wanita</h2><br>
+                <p class="text-center"> “Salah satu tanda seorang laki-laki yang sifatnya sudah dewasa (bukan dewasa karena usia), adalah dia sangat bisa menghargai seorang wanita dan tidak akan sanggup untuk menyakitinya”</p>
                     <blockquote class="blockquote text-right">
                     <footer  class="blockquote-footer">M. Nur Rudiyanto</footer>
                     </blockquote>
                     <hr>
             <img src="Assets/img/index3.png" class="rounded float-left" width="150px"> 
-                <h2>Jadilah orang baik, meskipun kau tak diperlakukan baik oleh orang lain</h2><br>
-                <p> “Bila engkau hendak memuji seseorang, pujilah Allah. 
+                <h2 class="text-center">Jadilah orang baik, meskipun kau tak diperlakukan baik oleh orang lain</h2><br>
+                <p class="text-center"> “Bila engkau hendak memuji seseorang, pujilah Allah. 
                     Karena tiada seorang manusia pun lebih banyak dalam memberi kepadamu dan lebih santun 
                     lembut kepadamu selain Allah.”</p>
                     <blockquote class="blockquote text-right">
@@ -153,8 +153,8 @@
             <hr>
             <hr>
             <img src="Assets/img/index4.png" class="rounded float-left" width="150px"> 
-                <h2>Orang yang sering merasa iri dan dengki cuma perlu belajar satu hal, yaitu ikhlas</h2><br>
-                <p> “Bila engkau hendak memuji seseorang, pujilah Allah. 
+                <h2 class="text-center">Orang yang sering merasa iri dan dengki cuma perlu belajar satu hal, yaitu ikhlas</h2><br>
+                <p class="text-center"> “Bila engkau hendak memuji seseorang, pujilah Allah. 
                     Karena tiada seorang manusia pun lebih banyak dalam memberi kepadamu dan lebih santun 
                     lembut kepadamu selain Allah.”</p>
                     <blockquote class="blockquote text-right">
@@ -164,8 +164,8 @@
 
             <hr>
             <img src="Assets/img/index5.png" class="rounded float-left" width="150px"> 
-                <h2>Apapun yang terjadi hari ini syukuri, ikhlaskan. Jadikan setiap hal yang terjadi sebagai pelajaran</h2><br>
-                <p> "Banyak hal yang harus Anda lalui di dalam hidup ini. Entah itu peristiwa, patah hati, menyedihkan, memalukan, kekalahan sampai pada hal yang menyenangkan. Semua harus Anda syukuri, sebagai bagian dari tempaan hidup yang akan membuat nda jadi lebih bijaksana." </p>
+                <h2 class="text-center">Apapun yang terjadi hari ini syukuri, ikhlaskan. Jadikan setiap hal yang terjadi sebagai pelajaran</h2><br>
+                <p class="text-center"> "Banyak hal yang harus Anda lalui di dalam hidup ini. Entah itu peristiwa, patah hati, menyedihkan, memalukan, kekalahan sampai pada hal yang menyenangkan. Semua harus Anda syukuri, sebagai bagian dari tempaan hidup yang akan membuat nda jadi lebih bijaksana." </p>
                     <blockquote class="blockquote text-right">
                     <footer  class="blockquote-footer">Khairul Umam Albi</footer>
                     </blockquote>
