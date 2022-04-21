@@ -1,7 +1,7 @@
 <div class="content">
   <div class="row">
     <div class="col">
-      <h1 class="h3 mb-2 text-dark ">Sedekah</h1>
+      <h1 class="mb-2 text-dark ">Sedekah</h1>
     </div>
     <!-- Page Heading -->
     <div class="col-lg-4">
