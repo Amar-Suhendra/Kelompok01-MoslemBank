@@ -28,14 +28,13 @@
   </head>
   <body class="profil-body">
       <div class="layout">
-      <img src="Assets/Img/masjid1.jpg" class="profil-avatar">
-          <div class="img"></div>
-          <h1>Masjid Ar-Rahman</h1>
-          <div class="text"><strong>Banda Aceh, Indonesia</strong></div>
-          <p>Ini adalah mesjid kita, mau sedekah hubungi Yusuf Mansur.
-            Pencatatan keuangan akan selalu aman, dengan MoslemBank.
-            Tidak ada penipuan, karena kami mencari ridha Allah.
-          </p>
+        <h1 class="profil-h1">Masjid Ar-Rahman</h1>
+        <h4 class="profil-h4">Banda Aceh, Indonesia</h4>
+        <h5 class="profil-h5">ID MAS001</h5>
+        <div class="button">
+          <button>Edit</button>
+          <button>Kembali</button>
+        </div>
       </div>
   </body>
 </html>
