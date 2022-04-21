@@ -36,5 +36,23 @@
           <button>Kembali</button>
         </div>
       </div>
+      <div class="konten">
+        <div class="card">
+          <div class="card-cover cover1">
+            <h3>Total Sumbangan</h3>
+          </div>
+          <div class="card-content">
+            <h3 class="text">Rp.25.000.000</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-cover cover2">
+            <h3>Total Pengeluaran</h3>
+          </div>
+          <div class="card-content">
+            <h3 class="text">Rp.15.000.000</h3>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
