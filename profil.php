@@ -28,10 +28,14 @@
   </head>
   <body class="profil-body">
       <div class="layout">
+      <img src="Assets/Img/masjid1.jpg" class="profil-avatar">
           <div class="img"></div>
           <h1>Masjid Ar-Rahman</h1>
-          <div class="text">Testing from <strong>Banda Aceh, Indonesia</strong></div>
-          <p>Ini adalah mesjid kita, mau sedekah hubungi saya</p>
+          <div class="text"><strong>Banda Aceh, Indonesia</strong></div>
+          <p>Ini adalah mesjid kita, mau sedekah hubungi Yusuf Mansur.
+            Pencatatan keuangan akan selalu aman, dengan MoslemBank.
+            Tidak ada penipuan, karena kami mencari ridha Allah.
+          </p>
       </div>
   </body>
 </html>

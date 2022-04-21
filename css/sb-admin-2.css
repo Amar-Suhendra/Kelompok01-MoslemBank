@@ -11282,15 +11282,16 @@ body.sidebar-toggled footer.sticky-footer {
 
 @import url('http://fonts.googleapis.com/css/family=Quicksand:400,500&subset=latin-ext');
 .profil-body{
-  padding: 100px;
+  padding:50px;
   background-image: linear-gradient(-20deg, #1cc88a 0%, #1cc88a 100%);
   text-align: center;
   font-family: 'Quicksand', sans-serif; 
+  height: 50vh;
 }
 
 .layout{
-  width: 800px;
-  height: 520px;
+  width: 780px;
+  height: 500px;
   background-color: #fafafa;
   margin: 0 auto;
   padding-top: 200px;
@@ -11299,7 +11300,6 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 img{
-  /*background-image: url();*/
   background-color: #eaeaea;
   background-size: cover;
   border-radius: 100px;
@@ -11331,3 +11331,11 @@ p{
   height: auto;
   color: #324e63;
 }
+
+.profil-avatar{
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: calc(72% - 28%);
+}
+
