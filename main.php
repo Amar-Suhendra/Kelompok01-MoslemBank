@@ -6,6 +6,7 @@ if ($_SESSION['login'] != true) {
     header('Location:index.php');
 }
 $user = $_SESSION['MasjidName'];
+$masjidid   = $_SESSION['MasjidID'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -141,7 +142,7 @@ $user = $_SESSION['MasjidName'];
                   class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                   aria-labelledby="userDropdown"
                 >
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="profil.php?id=<?php echo $masjidid ?>">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                   </a>

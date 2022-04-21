@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
+    <link rel="icon" type="image/x-icon" href="Assets/Img/favicon.ico">
     <title>MoslemBank | Register</title>
     <link rel="stylesheet" href="Assets/costum/CSS/style.css" />
     <!-- Custom fonts for this template-->
