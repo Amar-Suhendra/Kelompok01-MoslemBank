@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="icon" type="image/x-icon" href="Assets/Img/favicon.ico">
     <title>MoslemBank | Login</title>
     <link rel="stylesheet" href="Assets/costum/CSS/style.css">
     <!-- Custom fonts for this template-->
